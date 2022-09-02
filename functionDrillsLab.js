@@ -25,7 +25,9 @@ helloWorld();
 */
 
 //CODE HERE
-
+const jsNinja = () => {
+  return `I am a JavaScript ninja!`;
+}
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -36,7 +38,11 @@ helloWorld();
 
 //CODE HERE
 
+function printName(name) {
+  console.log(name);
+}
 
+printName(`Cameron`);
 ////////////////// PROBLEM 4 ////////////////////
 /*
   Create a function called greeting that
@@ -48,8 +54,11 @@ helloWorld();
 */
 
 //CODE HERE
+function greeting(name){
+  console.log(`Hello, ${name}`);
+}
 
-
+greeting(`jake`);
 ////////////////// PROBLEM 5 ////////////////////
 
 /*
