@@ -58,7 +58,7 @@ function greeting(name){
   console.log(`Hello, ${name}`);
 }
 
-greeting(`jake`);
+greeting(`Jake`);
 ////////////////// PROBLEM 5 ////////////////////
 
 /*
@@ -71,7 +71,15 @@ greeting(`jake`);
 */
 
 //CODE HERE
-
+const compareNums = (num1, num2) => {
+  if (num1 > num2){
+    return num1;
+  } else if (num2 > num1){
+    return num2;
+  } else{
+    return num1;
+  }
+}
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -82,7 +90,15 @@ greeting(`jake`);
 */
 
 //CODE HERE
+function add (num1, num2){
+  const n1 = parseInt(num1);
+  const n2 = parseInt(num2);
+  return n1 + n2;
+}
 
+const sum = add(4, 5);
+
+console.log(sum);
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -97,7 +113,7 @@ const exclaim = function(str) {
 
 // console.log('arrow')
 // console.log('declaration')
-// console.log('expression')
+console.log('expression')
 
 
 
@@ -112,7 +128,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// console.log('arrow')
+console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
@@ -122,7 +138,7 @@ const exclaimTwo = str => {
 
   Brownie points if you use a template string
 */
-
+const exclaimThree = (str) => str.toUpperCase() + `!!!`;
 
 
 ////////////////// PROBLEM 9 ////////////////////
@@ -137,7 +153,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log('declaration')
 // console.log('expression')
 
 
@@ -151,7 +167,19 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+function nameCheck(nameThing){
+  if (nameThing === 'Steven'){
+    return `What is up Steven?`;
+  } else if (nameThing === `Bryan`){
+    return `Hey Bryan!`;
+  } else {
+    return `Cool name, ${nameThing}`;
+  }
+}
 
+const nameGreeting = nameCheck(`Bob`);
+
+console.log(nameGreeting);
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
