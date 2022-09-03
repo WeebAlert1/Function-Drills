@@ -365,8 +365,9 @@ console.log(totalFrogs);
 
 //CODE HERE
 function chocoFroggo2 (gold){
-  gold / 3;
-  return gold %3;
+ const frogoo = Math.floor(gold/3);
+
+  return frogoo;
 }
 
 const totalFrogs2 = chocoFroggo2(20);
@@ -393,7 +394,9 @@ function arrything(arr){
   return true;
 }
 
-console.log(arrything(sampleArray2));
+const arrayIsAscending = arrything(sampleArray);
+
+console.log(arrayIsAscending);
 ////////////////// PROBLEM 22 ////////////////////
 
 let duck = "cute";
