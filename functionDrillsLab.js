@@ -216,7 +216,7 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
-function printAllNames(Arr){
+function printAllNames(Arr){  //Normally this will be arr not Arr for best practice --Nathan
   for (i = 0; i < Arr.length; i++){
     console.log(Arr[i]);
   }
@@ -276,7 +276,7 @@ function bigOrSmall(arr){
   for (i = 0; i < arr.length; i++){
     if (arr[i] > 100){
       answers.push(`big`);
-    } else if(arr[i] <= 100){
+    } else if(arr[i] <= 100){  // or you can use just else instead of else if.  Since there is no other value it can be.  --Nathan
       answers.push(`small`);
     }
   } 
@@ -334,8 +334,8 @@ stringUp(sampleString);
 */
 
 function emailCheck(email){
-  const emailString = email + `` && email.trim();
-  if (emailString.includes(`@`) === true){
+  const emailString = email + `` && email.trim();  // I don't think you will need email + ``.  I'm pretty sure email.trim() is all you need, we can talk about this if you want --Nathan
+  if (emailString.includes(`@`) === true){  //Also, here you don't need it to === true.  Since .includes() returns true or false, it is just a little redundent if (true === true) is what you are writting --Nathan
     return `email verified`;
   } else {
     return `must provide a valid email address`;
@@ -384,7 +384,7 @@ let sampleArray2 = [0,1,2,3,4,5,6,7,8]
 //CODE HERE
 function arrything(arr){
   const comp = arr[0];
-  for (i = 0; i < arr.length; i++){
+  for (i = 0; i < arr.length; i++){  //The issue is with the way you set up your for loop --Nathan
     if (arr[i] <= comp){
       return false
     } else {
